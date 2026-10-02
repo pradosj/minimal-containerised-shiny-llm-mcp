@@ -1,7 +1,7 @@
 # minimal_mcp-app
 
 A minimal containerized shiny app implementing a LLM interface with access to 
-a R session throught a MCP server. The R session has specialized Bioconductor 
+a R session through a MCP server. The R session has specialized Bioconductor 
 package for single-cell transcriptomic data analysis.
 
 
