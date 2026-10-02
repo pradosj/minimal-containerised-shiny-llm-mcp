@@ -10,15 +10,10 @@ throught a MCP server.
 
 2) Start Docker deamon
 
-```bash
-# Build the containers
-docker compose build
+3) Build the containers: `docker compose build`
 
-# Run the container
-docker compose down
-docker compose up -d
+4) Run the container: `docker compose up -d`
 
-# Open web browser
-open http://localhost:3839
-```
+5) Open web browser on port 3839: `open http://localhost:3839`
+
 
