@@ -1,4 +1,4 @@
-# minimal_mcp-app
+# minimal-containerised-shiny-llm-mcp
 
 A minimal containerized shiny app implementing a LLM interface with access to 
 a R session through a MCP server. The R session has specialized Bioconductor 
