@@ -1,0 +1,28 @@
+
+services:
+
+  mcpserver:
+    build: ./docker/mcpserver
+    volumes:
+      - "../shiny-app/www/data:/app/data:ro"
+      - "./mcpserver_tools.R:/app/mcpserver_tools.R:ro"
+    ports:
+      - "8888:8888"
+    restart: unless-stopped
+
+  shiny:
+    platform: linux/amd64
+    build: ./docker/shiny
+    depends_on:
+      - mcpserver
+    volumes:
+      - "./shiny-app/:/srv/shiny-server/"
+    ports:
+      - "3839:3838"
+    restart: unless-stopped
+    environment:
+      SHINY_LOG_STDERR: 1
+      APPLICATION_LOGS_TO_STDOUT: true
+
+
+

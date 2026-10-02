@@ -1,0 +1,11 @@
+
+{
+  "mcpServers": {
+		"mcpserver": {
+      "url": "http://mcpserver:8888",
+      "timeout": 30,
+      "allow_http": true
+    }
+  }
+}
+
