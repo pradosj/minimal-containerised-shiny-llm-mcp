@@ -20,7 +20,7 @@ ui <- page_fillable(
 )
 
 server <- function(input, output, session) {
-	tools <- mcptools::mcp_tools(config = "mcptools.json")
+	tools <- mcptools::mcp_tools(config = "mcpservers.json")
 	chat <- ellmer::chat_ollama(
 		base_url = "http://host.docker.internal:11434",
 		model = "gemma4:12b-nvfp4",
