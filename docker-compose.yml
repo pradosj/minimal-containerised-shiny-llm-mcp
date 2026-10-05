@@ -6,8 +6,6 @@ services:
     volumes:
       - "./data:/app/data:ro"
       - "./mcpserver_tools.R:/app/mcpserver_tools.R:ro"
-    ports:
-      - "8888:8888"
     restart: unless-stopped
 
   shiny:
